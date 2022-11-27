@@ -1,4 +1,4 @@
-module template
+module frames
 
 go 1.19
 
