@@ -1,6 +1,7 @@
 package main
 
 import (
+	"frames/generate"
 	"math/rand"
 	"os"
 	"time"
@@ -14,8 +15,10 @@ func main() {
 		return
 	}
 	command := os.Args[1]
+	os.Mkdir("data", 0755)
 
 	if command == "test" {
+		generate.Frame()
 	} else if command == "args" {
 	} else if command == "help" {
 		PrintHelp()
