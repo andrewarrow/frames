@@ -15,7 +15,7 @@ func main() {
 		return
 	}
 	command := os.Args[1]
-	os.Mkdir("data", 0755)
+	RmRfBang()
 
 	if command == "test" {
 		generate.Frame()
