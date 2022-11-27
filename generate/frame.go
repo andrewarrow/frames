@@ -2,6 +2,7 @@ package generate
 
 import (
 	"fmt"
+	"frames/util"
 
 	"github.com/fogleman/gg"
 )
@@ -17,5 +18,6 @@ func Frame() {
 	dc.SetRGB(0, 0, 0)
 	dc.Clear()
 	dc.SavePNG(fmt.Sprintf("data/img%07d.png", frameCount))
+	util.OpenData()
 
 }

@@ -2,6 +2,7 @@ package main
 
 import (
 	"frames/generate"
+	"frames/util"
 	"math/rand"
 	"os"
 	"time"
@@ -15,7 +16,7 @@ func main() {
 		return
 	}
 	command := os.Args[1]
-	RmRfBang()
+	util.RmRfBang()
 
 	if command == "test" {
 		generate.Frame()
