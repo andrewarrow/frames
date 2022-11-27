@@ -17,6 +17,10 @@ func Frame() {
 	dc := gg.NewContext(width, height)
 	dc.SetRGB(0, 0, 0)
 	dc.Clear()
+	dc.LoadFontFace("andale.ttf", 36)
+	dc.SetRGB(1, 1, 1)
+	dc.DrawString("testing", 60, 60)
+
 	dc.SavePNG(fmt.Sprintf("data/img%07d.png", frameCount))
 	util.OpenData()
 
